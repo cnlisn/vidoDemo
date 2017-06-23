@@ -212,8 +212,8 @@ public class MediaUtils implements SurfaceHolder.Callback {
 
     private void startPreView(SurfaceHolder holder) {
         if (mCamera == null) {
-            mCamera = Camera.open(Camera.CameraInfo.CAMERA_FACING_BACK);
-//            mCamera = Camera.open(Camera.CameraInfo.CAMERA_FACING_FRONT);
+//            mCamera = Camera.open(Camera.CameraInfo.CAMERA_FACING_BACK);
+            mCamera = Camera.open(Camera.CameraInfo.CAMERA_FACING_FRONT);
         }
         if (mCamera != null) {
             mCamera.setDisplayOrientation(or);
